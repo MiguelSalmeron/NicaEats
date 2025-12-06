@@ -3,101 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>NicaEats</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
-    <header>
-        <h1>NicaEats</h1>
-        <button>Iniciar Sesión</button>
-        <button>Registrarse</button>
+    <header class="cabecera-principal">
+        <h1 class="titulo-marca">NicaEats</h1>
+        <div class="contenedor-botones-auth">
+            <button class="boton-accion-secundario">Iniciar Sesión</button>
+            <button class="boton-accion-primario">Registrarse</button>
+        </div>
     </header>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    <hr>
 
     <main>
-        <section>
+        <section class="seccion-hero-busqueda">
             <h2>Tu comida nica favorita...</h2>
             <p>Directo a tu puerta.</p>
             
-            <input type="text" placeholder="Ingresá tu dirección">
-            <button>Buscar comida</button>
+            <input type="text" placeholder="Ingresá tu dirección" class="campo-direccion-entrada">
+            <button class="boton-buscar-comida">Buscar comida</button>
         </section>
 
-        <br>
-
-        <section>
+        <section class="seccion-categorias-lista">
             <h3>Categorías</h3>
-            <ul>
-                <li>
+            <ul class="lista-iconos-categorias">
+                <li class="item-categoria-individual">
                     <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=100" alt="Fritanga">
                     <br>Fritanga
                 </li>
-                <li>
+                <li class="item-categoria-individual">
                     <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=100" alt="Pizza">
                     <br>Pizzas
                 </li>
-                <li>
+                <li class="item-categoria-individual">
                     <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=100" alt="Quesillos">
                     <br>Quesillos
                 </li>
             </ul>
         </section>
 
-        <br>
-
-        <section>
-            <h3>Restaurantes Populares</h3>
-
-            <div>
-                <img src="https://images.unsplash.com/photo-1544025162-d76690b67f14?w=200" alt="Comida">
-                <h4>Fritanga La Robusta</h4>
-                <p>Calificación: 4.8</p>
-                <p>Tiempo: 20-30 min</p>
-                <p>Envío: C$40</p>
+        <section class="seccion-restaurantes-destacados">
+            <div class="tarjeta-restaurante-individual">
+                <img src="https://images.unsplash.com/photo-1544025162-d76690b67f14?w=200" alt="Comida" class="imagen-restaurante-previa">
+                <div class="info-restaurante-detalle">
+                    <h4>Fritanga La Robusta</h4>
+                    <p>Calificación: 4.8</p>
+                    <p>Tiempo: 20-30 min</p>
+                    <p>Envío: C$40</p>
+                </div>
             </div>
 
-            <br>
-
-            <div>
-                <img src="https://images.unsplash.com/photo-1529312266912-b33cf6227e24?w=200" alt="Comida">
-                <h4>Vigorón La Abuela</h4>
-                <p>Calificación: 4.6</p>
-                <p>Tiempo: 15-25 min</p>
-                <p>Envío: Gratis</p>
+            <div class="tarjeta-restaurante-individual">
+                <img src="https://images.unsplash.com/photo-1529312266912-b33cf6227e24?w=200" alt="Comida" class="imagen-restaurante-previa">
+                <div class="info-restaurante-detalle">
+                    <h4>Vigorón La Abuela</h4>
+                    <p>Calificación: 4.6</p>
+                    <p>Tiempo: 15-25 min</p>
+                    <p>Envío: Gratis</p>
+                </div>
             </div>
 
-            <br>
-
-            <div>
-                <img src="https://images.unsplash.com/photo-1596910547037-846b1980329f?w=200" alt="Comida">
-                <h4>Quesillos El Pipe</h4>
-                <p>Calificación: 4.9</p>
-                <p>Tiempo: 30-45 min</p>
-                <p>Envío: C$50</p>
+            <div class="tarjeta-restaurante-individual">
+                <img src="https://images.unsplash.com/photo-1596910547037-846b1980329f?w=200" alt="Comida" class="imagen-restaurante-previa">
+                <div class="info-restaurante-detalle">
+                    <h4>Quesillos El Pipe</h4>
+                    <p>Calificación: 4.9</p>
+                    <p>Tiempo: 30-45 min</p>
+                    <p>Envío: C$50</p>
+                </div>
             </div>
         </section>
 
-        <br>
-        <hr>
-        <br>
-
-        <section>
+        <section class="seccion-registro-negocio">
             <h2>¿Sos dueño de un restaurante?</h2>
             <p>Unite a NicaEats hoy mismo.</p>
-            <a href="#">Registrar mi negocio</a>
+            <a href="#" class="enlace-registro-negocio">Registrar mi negocio</a>
         </section>
 
     </main>
 
-    <br>
-    <hr>
-
-    <footer>
+    <footer class="pie-pagina-principal">
         <p>NicaEats 2023</p>
         
         <h4>Enlaces</h4>
-        <ul>
+        <ul class="lista-enlaces-pie">
             <li><a href="#">Sobre Nosotros</a></li>
             <li><a href="#">Ayuda</a></li>
             <li><a href="#">Blog</a></li>
@@ -108,24 +97,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
