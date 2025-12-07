@@ -1,0 +1,46 @@
+body {
+    background-color: #e0e0e0 !important;
+    font-family: Arial, sans-serif;
+}
+
+#contenedor_feo {
+    border: 3px dashed #ff4757;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 0px;
+    padding: 30px !important;
+}
+
+button {
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+b {
+    color: red;
+    font-size: 18px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    #contenedor_feo {
+        width: 100% !important;
+        border: none;
+    }
+}

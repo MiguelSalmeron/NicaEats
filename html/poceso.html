@@ -1,0 +1,71 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Finalizar Compra</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body style="background-color: #f0f0f0;">
+
+<br><br>
+<center>
+<div id="contenedor_feo" style="background: white; width: 90%; max-width: 500px; padding: 20px; border: 1px solid #999; box-shadow: 5px 5px 0px #ccc;">
+
+    <h1>Tu Pedido</h1>
+    <hr>
+    <div style="text-align: left; padding: 10px;">
+        <h3>Fritanga La Robusta</h3>
+        <p>1x Carne Asada <b style="float:right">C$ 120</b></p>
+        <p>1x Enchilada <b style="float:right">C$ 30</b></p>
+        <p>1x Cacao <b style="float:right">C$ 20</b></p>
+        <hr>
+        <h2 style="text-align: right;">Total: C$ 170</h2>
+    </div>
+    <br>
+    <button onclick="pantallaPago()" style="background: #ff4757; color: white; width: 100%; height: 50px; border: none; font-size: 20px; cursor: pointer;">PAGAR AHORA</button>
+
+</div>
+</center>
+
+<script>
+    var forma_pago = "";
+
+    function pantallaPago() {
+        var caja = document.getElementById("contenedor_feo");
+        caja.innerHTML = "<h1>Forma de Pago</h1>" +
+                         "<hr><br>" +
+                         "<div style='text-align:left; font-size:18px;'>" +
+                         "<input type='radio' name='fp' onclick='fijarPago(\"efectivo\")'> Efectivo (Cordobas)<br><br>" +
+                         "<input type='radio' name='fp' onclick='fijarPago(\"tarjeta\")'> Tarjeta Credito<br><br>" +
+                         "</div>" +
+                         "<br><br>" +
+                         "<button onclick='recargar()' style='float:left; padding:10px;'>CANCELAR</button>" +
+                         "<button onclick='validar()' style='float:right; background:green; color:white; padding:10px; font-weight:bold;'>CONFIRMAR</button>" +
+                         "<br><br>";
+    }
+
+    function fijarPago(tipo) {
+        forma_pago = tipo;
+    }
+
+    function recargar() {
+        location.reload();
+    }
+
+    function validar() {
+        if (forma_pago == "") {
+            alert("Selecciona como vas a pagar por favor.");
+        } else {
+            document.body.innerHTML = "<br><br><br><center>" +
+                                      "<h1 style='color:green; font-size:60px;'>LISTO!</h1>" +
+                                      "<h2>Tu comida va en camino.</h2>" +
+                                      "<img src='https://cdn-icons-png.flaticon.com/512/190/190411.png' width='100'>" +
+                                      "<br><br><br>" +
+                                      "<a href='index.html' style='font-size:20px;'>Pedir mas comida</a>" +
+                                      "</center>";
+        }
+    }
+</script>
+
+</body>
+</html>
